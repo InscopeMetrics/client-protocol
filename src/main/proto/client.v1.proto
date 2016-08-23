@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 syntax = "proto3";
-package com.inscopemetrics.metrics.client.protocol;
-option java_package = "com.inscopemetrics.metrics.client.protocol";
+package com.inscopemetrics.client.protocol;
+option java_package = "com.inscopemetrics.client.protocol";
 
 message RecordSet {
     repeated Record records = 1;
