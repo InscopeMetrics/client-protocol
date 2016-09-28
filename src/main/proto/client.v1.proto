@@ -26,7 +26,8 @@ message Record {
     repeated MetricEntry counters = 4;
     repeated MetricEntry timers = 5;
     bytes id = 6;
-    uint64 millisSinceEpoch = 7;
+    uint64 endMillisSinceEpoch = 7;
+    uint64 startMillisSinceEpoch = 8;
 }
 
 message Unit {
