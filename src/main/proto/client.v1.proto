@@ -77,6 +77,8 @@ message Unit {
         ZEBI = 26;
         YOBI = 27;
 
+        UNIT = 28;
+
     }
     Type type = 1;
     Scale scale = 2;
