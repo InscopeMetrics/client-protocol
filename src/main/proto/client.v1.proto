@@ -14,12 +14,15 @@
 syntax = "proto3";
 package com.inscopemetrics.client.protocol;
 option java_package = "com.inscopemetrics.client.protocol";
+option deprecated = true;
 
 message RecordSet {
+    option deprecated = true;
     repeated Record records = 1;
 }
 
 message Record {
+    option deprecated = true;
     repeated AnnotationEntry annotations = 1;
     repeated DimensionEntry dimensions = 2;
     repeated MetricEntry gauges = 3;
@@ -31,6 +34,7 @@ message Record {
 }
 
 message Unit {
+    option deprecated = true;
     enum Type {
         SECOND = 0;
         MINUTE = 1;
@@ -85,26 +89,31 @@ message Unit {
 }
 
 message CompoundUnit {
+    option deprecated = true;
     repeated Unit numerator = 1;
     repeated Unit denominator = 2;
 }
 
 message AnnotationEntry {
+    option deprecated = true;
     string name = 1;
     string value = 2;
 }
 
 message DimensionEntry {
+    option deprecated = true;
     string name = 1;
     string value = 2;
 }
 
 message DoubleQuantity {
+    option deprecated = true;
     double value = 1;
     CompoundUnit unit = 2;
 }
 
 message MetricEntry {
+    option deprecated = true;
     string name = 1;
     repeated DoubleQuantity samples = 2;
 }
