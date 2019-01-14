@@ -74,6 +74,10 @@
     <!--Plugin versions-->
     <protoc.jar.maven.plugin.version>3.6.0.2</protoc.jar.maven.plugin.version>
     <build.helper.plugin.version>1.10</build.helper.plugin.version>
+
+    <!-- Findbugs -->
+    <!-- Due to: https://github.com/protocolbuffers/protobuf/issues/5576 -->
+    <findbugsExclude>findbugs-exclude.xml</findbugsExclude>
   </properties>
   <build>
     <plugins>
