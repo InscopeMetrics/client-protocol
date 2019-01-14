@@ -24,11 +24,11 @@ Prerequisites:
 
 Building:
 
-    client-protocol> ./mvnw verify
+    client-protocol> ./jdk-wrapper.sh ./mvnw verify
 
 To use the local version you must first install it locally:
 
-    client-protocol> ./mvnw install
+    client-protocol> ./jdk-wrapper.sh ./mvnw install
 
 You can determine the version of the local build from the pom file.  Using the local version is intended only for testing or development.
 
