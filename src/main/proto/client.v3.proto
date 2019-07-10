@@ -19,20 +19,15 @@ option java_package = "io.inscopemetrics.client.protocol";
 // Response:
 // ~~~~
 
-message IdentifierMapping {
-    repeated IdentifierMappingEntry identifierMapping = 1;
-}
-
-message IdentifierMappingEntry {
-    Identifier stringValue = 1;
-    int64 idValue = 2;
+message Response {
+    // Intentionally empty
 }
 
 
 // Request:
 // ~~~~
 
-message RecordSet {
+message Request {
     repeated Record records = 1;
 }
 
@@ -52,18 +47,17 @@ message DimensionEntry {
 
 message MetricSampleEntry {
     Identifier name = 1;
-    repeated double samples = 2;
+    Samples samples = 2;
 }
 
 message MetricStatisticsEntry {
     Identifier name = 1;
-    repeated Statistic statistics = 2;
+    Statistic statistic = 2;
 }
 
 message Identifier {
     oneof value {
         string stringValue = 1;
-        int64 idValue = 2;
     }
 }
 
@@ -75,12 +69,23 @@ message Statistic {
 
 message AugmentedHistogram {
     repeated SparseHistogramEntry entries = 1;
-    double min = 2;
-    double max = 3;
-    double sum = 4;
+    int32 precision = 2;
+    double min = 3;
+    double max = 4;
+    double sum = 5;
 }
 
 message SparseHistogramEntry {
-    double bucket = 1;
+    int64 bucket = 1;
     int32 count = 2;
+}
+
+message Samples {
+    oneof value {
+        DoubleSamples doubleSamples = 1;
+    }
+}
+
+message DoubleSamples {
+    repeated double samples = 1;
 }
