@@ -36,8 +36,7 @@ message Record {
     uint64 endMillisSinceEpoch = 2;
     uint64 startMillisSinceEpoch = 3;
     repeated DimensionEntry dimensions = 4;
-    repeated MetricSampleEntry samples = 5;
-    repeated MetricStatisticsEntry statistics = 6;
+    repeated MetricDataEntry data = 5;
 }
 
 message DimensionEntry {
@@ -45,14 +44,10 @@ message DimensionEntry {
     Identifier value = 2;
 }
 
-message MetricSampleEntry {
+message MetricDataEntry {
     Identifier name = 1;
     Samples samples = 2;
-}
-
-message MetricStatisticsEntry {
-    Identifier name = 1;
-    Statistic statistic = 2;
+    Statistic statistic = 3;
 }
 
 message Identifier {
