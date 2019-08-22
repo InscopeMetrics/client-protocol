@@ -46,8 +46,11 @@ message DimensionEntry {
 
 message MetricDataEntry {
     Identifier name = 1;
-    Samples samples = 2;
-    Statistic statistic = 3;
+    oneof data {
+        // All data implementations should provide a
+        // samples and statistics field.
+        NumericalData numericalData = 2;
+    }
 }
 
 message Identifier {
@@ -56,10 +59,13 @@ message Identifier {
     }
 }
 
-message Statistic {
-    oneof value {
-        AugmentedHistogram augmentedHistogram = 1;
-    }
+message NumericalData {
+    // While it is valid to set both samples and statistics,
+    // the data must be independent and you likely only should
+    // set one or the other depending on whether you are
+    // performing client-side aggregation.
+    repeated double samples = 1;
+    AugmentedHistogram statistics = 2;
 }
 
 message AugmentedHistogram {
@@ -73,14 +79,4 @@ message AugmentedHistogram {
 message SparseHistogramEntry {
     int64 bucket = 1;
     int32 count = 2;
-}
-
-message Samples {
-    oneof value {
-        DoubleSamples doubleSamples = 1;
-    }
-}
-
-message DoubleSamples {
-    repeated double samples = 1;
 }
