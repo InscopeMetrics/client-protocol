@@ -29,7 +29,7 @@
   <name>Metrics Client Protocol</name>
   <description>Protocol definition between a metrics client and an aggregator or storage system.</description>
   <url>https://github.com/InscopeMetrics/client-protocol</url>
-  <version>0.11.1</version>
+  <version>0.11.2-SNAPSHOT</version>
 
   <licenses>
     <license>
@@ -63,7 +63,7 @@
     <connection>scm:git:git@github.com:InscopeMetrics/client-protocol.git</connection>
     <developerConnection>scm:git:git@github.com:InscopeMetrics/client-protocol.git</developerConnection>
     <url>https://github.com/InscopeMetrics/client-protocol</url>
-    <tag>protocol-0.11.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
