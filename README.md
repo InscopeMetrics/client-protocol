@@ -9,8 +9,8 @@ Metrics Client Protocol
     <img src="https://travis-ci.org/InscopeMetrics/client-protocol.png"
          alt="Travis Build">
 </a>
-<a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.inscopemetrics.metrics%22%20a%3A%22client-protocol%22">
-    <img src="https://img.shields.io/maven-central/v/io.inscopemetrics.metrics/client-protocol.svg"
+<a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.inscopemetrics.client%22%20a%3A%22protocol%22">
+    <img src="https://img.shields.io/maven-central/v/io.inscopemetrics.client/protocol.svg"
          alt="Maven Artifact">
 </a>
 
