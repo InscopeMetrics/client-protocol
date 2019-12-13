@@ -33,8 +33,8 @@ message Request {
 
 message Record {
     bytes id = 1;
-    uint64 endMillisSinceEpoch = 2;
-    uint64 startMillisSinceEpoch = 3;
+    uint64 end_millis_since_epoch = 2;
+    uint64 start_millis_since_epoch = 3;
     repeated DimensionEntry dimensions = 4;
     repeated MetricDataEntry data = 5;
 }
@@ -49,13 +49,13 @@ message MetricDataEntry {
     oneof data {
         // All data implementations should provide a
         // samples and statistics field.
-        NumericalData numericalData = 2;
+        NumericalData numerical_data = 2;
     }
 }
 
 message Identifier {
     oneof value {
-        string stringValue = 1;
+        string string_value = 1;
     }
 }
 
