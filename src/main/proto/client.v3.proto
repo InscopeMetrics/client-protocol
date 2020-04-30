@@ -78,5 +78,5 @@ message AugmentedHistogram {
 
 message SparseHistogramEntry {
     int64 bucket = 1;
-    int32 count = 2;
+    uint64 count = 2;
 }
