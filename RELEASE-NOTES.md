@@ -1,9 +1,13 @@
 Inscope Metrics Build Resources
 ===============================
 
-0.11.3 - TBD
+0.11.4 - TBD
 ------------------------
-* _TBD_
+* TBD
+
+0.11.3 - May 3, 2020
+------------------------
+* Updated Protoco Buffer dependency to `3.10.0`.
 
 0.11.2 - April 30, 2020
 ------------------------
