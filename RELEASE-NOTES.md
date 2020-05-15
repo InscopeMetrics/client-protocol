@@ -1,9 +1,9 @@
 Inscope Metrics Build Resources
 ===============================
 
-0.11.4 - TBD
+0.11.4 - May 15, 2020
 ------------------------
-* TBD
+* Added `request_millis_since_epoch` request field for tracking data freshness starting at the client.
 
 0.11.3 - May 3, 2020
 ------------------------
