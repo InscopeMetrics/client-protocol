@@ -35,7 +35,7 @@ message Record {
     bytes id = 1;
     uint64 end_millis_since_epoch = 2;
     uint64 start_millis_since_epoch = 3;
-    uint64 received_at_millis_since_epoch = 6;
+    uint64 request_millis_since_epoch = 6;
     repeated DimensionEntry dimensions = 4;
     repeated MetricDataEntry data = 5;
 }
