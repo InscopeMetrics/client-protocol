@@ -1,4 +1,4 @@
-Inscope Metrics Build Resources
+Inscope Metrics Client Protocol
 ===============================
 
 0.11.4 - May 15, 2020
