@@ -42,7 +42,7 @@
     <developer>
       <id>brandonarp</id>
       <email>brandon.arp@inscopemetrics.io</email>
-      <organization>Inscope Metrics, Inc</organization>
+      <organization>Inscope Metrics</organization>
       <organizationUrl>http://www.inscopemetrics.io</organizationUrl>
       <roles>
         <role>developer</role>
@@ -50,8 +50,8 @@
     </developer>
     <developer>
       <id>villekoskela</id>
-      <email>ville.koskela@inscopemetrics.com</email>
-      <organization>Inscope Metrics, Inc</organization>
+      <email>ville.koskela@inscopemetrics.io</email>
+      <organization>Inscope Metrics</organization>
       <organizationUrl>http://www.inscopemetrics.io</organizationUrl>
       <roles>
         <role>developer</role>
