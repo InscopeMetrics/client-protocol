@@ -73,7 +73,7 @@
 
     <!--Plugin versions-->
     <protoc.jar.maven.plugin.version>3.11.4</protoc.jar.maven.plugin.version>
-    <build.helper.plugin.version>3.0.0</build.helper.plugin.version>
+    <build.helper.plugin.version>3.5.0</build.helper.plugin.version>
 
     <!-- Spotbugs -->
     <spotbugs.exclude>spotbugs.exclude.xml</spotbugs.exclude>
