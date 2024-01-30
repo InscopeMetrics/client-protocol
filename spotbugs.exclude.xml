@@ -75,6 +75,9 @@
     <Or>
       <Bug pattern="UC_USELESS_CONDITION"/>
       <Bug pattern="UCF_USELESS_CONTROL_FLOW"/>
+      <Bug pattern="MS_EXPOSE_REP"/>
+      <Bug pattern="EI_EXPOSE_REP"/>
+      <Bug pattern="EI_EXPOSE_REP2"/>
     </Or>
   </Match>
 
