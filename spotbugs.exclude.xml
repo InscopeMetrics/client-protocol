@@ -81,4 +81,12 @@
     </Or>
   </Match>
 
+  <!-- Ignore generated sources -->
+  <Match>
+    <Or>
+      <Source name="~.*generated.*" />
+      <Class name="~.*io\.inscopemetrics\.client\.protocol\..*" />
+      <Class name="~.*com\.inscopemetrics\.client\.protocol\..*" />
+    </Or>
+  </Match>
 </FindBugsFilter>
